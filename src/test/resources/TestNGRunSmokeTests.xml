@@ -24,6 +24,7 @@
 		
 		<parameter name="BrowserName" value="CHROME" />
 			<parameter name="Platform" value="LINUX" />
+			<parameter name="BrowserVersion" value="70.0.3538.67" />
 		
     
 		<classes>

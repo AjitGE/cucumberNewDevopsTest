@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Run_Test_Cukes">
-                    <span>C:\Users\Ajit\Documents\GitHub\apt\CucumberCraft\src\test\resources\TestNGRunSmokeTests.xml</span>
+                    <span>C:\Users\Ajit\Documents\project\cucumberNewDevopsTest\src\test\resources\TestNGRunSmokeTests.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -138,14 +138,30 @@
 	at java.lang.Thread.run(Thread.java:748)
 Caused by: java.lang.ExceptionInInitializerError
 	at com.CucumberCraft.Screenshot.ScreenshotTaker.&lt;clinit&gt;(ScreenshotTaker.java:19)
-	at com.CucumberCraft.stepDefinitions.Browser_Excel_StepDef.user_launches_browser_with_url(Browser_Excel_StepDef.java:28)
+	at com.CucumberCraft.stepDefinitions.Browser_Excel_StepDef.user_launches_browser_with_url(Browser_Excel_StepDef.java:29)
 	at ✽.Then user launches browser with url &quot;#TestUrl&quot;(UserStory_US869555.feature:6)
-Caused by: java.lang.NullPointerException
-	at com.CucumberCraft.supportLibraries.DriverManager.setWebDriver(DriverManager.java:88)
-	at com.CucumberCraft.supportLibraries.DriverManager.getWebDriver(DriverManager.java:46)
+Caused by: org.openqa.selenium.WebDriverException: unknown error: failed to change window state to maximized, current state is normal
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d),platform=Linux 4.9.93-linuxkit-aufs x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;AJIT-PC&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600233 (523efee95e3d68..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:42143}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.67, webStorageEnabled: true, webdriver.remote.sessionid: 5f309d64bd7a7d9abce099a138e...}
+Session ID: 5f309d64bd7a7d9abce099a138ed4143
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:657)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:891)
+	at com.CucumberCraft.supportLibraries.DriverManager.getWebDriver(DriverManager.java:53)
 	at com.CucumberCraft.Screenshot.EventHandler.&lt;clinit&gt;(EventHandler.java:16)
 	at com.CucumberCraft.Screenshot.ScreenshotTaker.&lt;clinit&gt;(ScreenshotTaker.java:19)
-	at com.CucumberCraft.stepDefinitions.Browser_Excel_StepDef.user_launches_browser_with_url(Browser_Excel_StepDef.java:28)
+	at com.CucumberCraft.stepDefinitions.Browser_Excel_StepDef.user_launches_browser_with_url(Browser_Excel_StepDef.java:29)
 	at cucumber.runtime.Utils$1.call(Utils.java:40)
 	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
 	at cucumber.runtime.Utils.invoke(Utils.java:34)
@@ -162,7 +178,7 @@ Caused by: java.lang.NullPointerException
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 36 stack frames
+... Removed 40 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Feature)                  </em>
@@ -173,7 +189,7 @@ Caused by: java.lang.NullPointerException
         </div> <!-- panel Run_Test_Cukes -->
         <div panel-name="test-xml-Run_Test_Cukes" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Ajit\Documents\GitHub\apt\CucumberCraft\src\test\resources\TestNGRunSmokeTests.xml</span>
+            <span class="header-content">C:\Users\Ajit\Documents\project\cucumberNewDevopsTest\src\test\resources\TestNGRunSmokeTests.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -185,7 +201,9 @@ Caused by: java.lang.NullPointerException
   &lt;/listeners&gt;
   &lt;test name=&quot;Smoke testing....&quot;&gt;
     &lt;parameter name=&quot;BrowserName&quot; value=&quot;CHROME&quot;/&gt;
+    &lt;parameter name=&quot;Platform&quot; value=&quot;LINUX&quot;/&gt;
     &lt;parameter name=&quot;ExecutionMode&quot; value=&quot;REMOTE&quot;/&gt;
+    &lt;parameter name=&quot;BrowserVersion&quot; value=&quot;70.0.3538.67&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.CucumberCraft.TestNGrunners.RunCucumberTests_Smoke&quot;/&gt;
     &lt;/classes&gt;
@@ -239,12 +257,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'com.CucumberCraft.TestNGrunners.RunCucumberTests_Smoke')
-data.setCell(0, 3, 7429);
+data.setCell(0, 3, 51225);
 window.suiteTableData['Run_Test_Cukes']= { tableData: data, tableDiv: 'times-div-Run_Test_Cukes'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 51 seconds</span>
               <div id="times-div-Run_Test_Cukes">
               </div> <!-- times-div-Run_Test_Cukes -->
             </div> <!-- times-div -->
@@ -279,19 +297,19 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">feature(pagination of box)</span>
-                <span class="method-start">753 ms</span>
+                <span class="method-start">976 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">8194 ms</span>
+                <span class="method-start">52250 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">test</span>
-                <span class="method-start">9117 ms</span>
+                <span class="method-start">55538 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">copyStoredReports</span>
-                <span class="method-start">9610 ms</span>
+                <span class="method-start">57317 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

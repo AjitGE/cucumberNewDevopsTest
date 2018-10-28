@@ -49,8 +49,8 @@ public class DriverManager {
 		}
 		log.debug("Getting instance of remote driver" + webDriver.get().getClass());
 		WebDriver driver= webDriver.get();
-		    driver.manage().deleteAllCookies();
-		    driver.manage().window().maximize();
+		   driver.manage().deleteAllCookies();
+		   driver.manage().window().maximize();
 		    SessionId session =  ((RemoteWebDriver) driver).getSessionId();
 		    sessionSet.add(session);
 		        return driver;

@@ -44,11 +44,13 @@ com\CucumberCraft\ExcelReadWrite\DbReadWrite.class
 com\CucumberCraft\pageObjects\LocateStratergy.class
 com\CucumberCraft\supportLibraries\SauceLabsDriverFactory.class
 com\CucumberCraft\ExcelReadWrite\DataSourceDecider.class
+com\CucumberCraft\supportLibraries\SeeTestDriverFactory$1.class
 com\CucumberCraft\supportLibraries\AppiumDriverFactory.class
 com\CucumberCraft\stepDefinitions\UserStroy_US880513.class
 com\CucumberCraft\stepDefinitions\UserStory_US869555.class
 com\CucumberCraft\supportLibraries\DriverFactory$1.class
 com\CucumberCraft\TestNGrunners\RunCucumberTests_Regression.class
+com\CucumberCraft\supportLibraries\SeeTestDriverFactory.class
 com\CucumberCraft\ExcelReadWrite\ExcelReadWrite.class
 com\CucumberCraft\Screenshot\ImageToPdf.class
 com\CucumberCraft\supportLibraries\PerfectoLabUtils.class

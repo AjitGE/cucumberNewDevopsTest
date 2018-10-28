@@ -88,11 +88,6 @@ public class DriverFactory {
 						testParameters.getBrowserVersion(),
 						testParameters.getPlatform(),
 						mobileProperties.getProperty("RemoteUrl"));
-				Browser browser=testParameters.getBrowser();
-				String Version=testParameters.getBrowserVersion();
-				Platform platform=testParameters.getPlatform();
-				System.out.println(browser.getValue());
-				System.out.println(Version);
 			
 				break;
 
