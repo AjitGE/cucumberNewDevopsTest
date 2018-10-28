@@ -93,7 +93,7 @@ public class DriverFactory {
 				Platform platform=testParameters.getPlatform();
 				System.out.println(browser.getValue());
 				System.out.println(Version);
-				System.out.println(platform.valueOf("name"));
+			
 				break;
 
 
