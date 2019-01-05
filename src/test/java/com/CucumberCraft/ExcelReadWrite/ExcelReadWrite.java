@@ -128,6 +128,10 @@ public class ExcelReadWrite {
                             String f=cell.getStringCellValue(); 
                             data.add(f);
                              break;
+					  case BLANK: 
+                            String g=cell.getStringCellValue()+"NA"; 
+                            data.add(g);
+                             break;
 						default:
 							break;
                         
